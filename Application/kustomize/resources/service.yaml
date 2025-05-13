@@ -3,9 +3,11 @@ kind: Service
 metadata:
   name: game-2048
 spec:
+  type: NodePort
   ports:
     - name: http
       port: 8080
       targetPort: 8080
+      nodePort: 32005
   selector:
     app: game-2048
