@@ -9,11 +9,12 @@
 #ENV NODE_ENV=development
 #RUN npm run build
 
-FROM docker.io/harpreet152436/major-app:latest
+#FROM docker.io/harpreet152436/major-app:latest
+FROM alpine:latest
 #RUN npm install http-server -g
 #RUN mkdir /public
 #WORKDIR /public
 #COPY --from=builder /usr/src/app/dist/ ./
 EXPOSE 8080
 USER 1000
-CMD ["http-server"]
+CMD ["sleep 600"]
