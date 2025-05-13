@@ -9,7 +9,7 @@
 #ENV NODE_ENV=development
 #RUN npm run build
 
-FROM harpreet152436/major-app:latest
+FROM docker.io/harpreet152436/major-app:latest
 #RUN npm install http-server -g
 #RUN mkdir /public
 #WORKDIR /public
